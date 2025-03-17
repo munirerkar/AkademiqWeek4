@@ -14,13 +14,14 @@ public class TechnologyManager implements TechnologyRepository {
 
     @Override
     public void add(Technology technology) {
-        for (var item:repository.GetAll()){
-            if (technology.getId() != item.getId()){
+        /*for (var item : repository.GetAll()) {
+            if (technology.getId() == item.getId()) {
                 System.out.println("Bu teknoloji idsi mevcut farklı id girin");
-            }else{
+            } else {
                 repository.add(technology);
             }
-        }
+        }*/
+        repository.add(technology);
     }
 
     @Override
